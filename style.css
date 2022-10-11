@@ -544,7 +544,7 @@ div.trend{
 }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   #testimonial-area .section-heading h2 {
-    font-size: 30px;
+    font-size: 16px;
     line-height: 40px;
   }
   .client-comment h3 {
@@ -555,7 +555,7 @@ div.trend{
     width: 80%;
   }
   .client-comment span i {
-    font-size: 40px;
+    font-size: 16px;
   }
   .client-single:not(.active) {
     -webkit-transform: scale(0.25);
@@ -658,7 +658,7 @@ div.trend{
 
 
 .accordion {
-  background: #F7F7F7;
+  background: #ffffff;
   color: #35475C;
   /* font-family: 'Open Sans'; */
   cursor: pointer;
