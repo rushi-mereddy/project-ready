@@ -4,6 +4,7 @@ html{
 body{
     margin: 0 auto;
     overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -209,18 +210,22 @@ p{
 .supp{
     padding: 50px 0px 50px 0px;
     overflow: hidden;
+    background: url(images/supp-bg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .supp-right{
-    background: rgb(44,81,153);
-    background: linear-gradient(75deg, rgba(44,81,153,1) 0%, rgba(19,35,86,1) 100%);
+    /* background: rgb(44,81,153);
+    background: linear-gradient(75deg, rgba(44,81,153,1) 0%, rgba(19,35,86,1) 100%); */
     padding: 50px 0px 50px 0px;
     text-align: center;
     justify-content: center;
 }
 
 .supp-left{
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 100px;
 }
 
 .supp-logo{
@@ -276,19 +281,23 @@ p{
 
 
 /* Recognized by  */
-/* .rec{
-
-} */
+.rec{
+  padding: 50px 0px 50px 0px;
+  background: url(images/rec-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .rec-left{
     padding: 50px 0px 50px 0px;
     text-align: center;
     justify-content: center;
+
 }
 
 .rec-left-contents{
-    background: rgb(44,81,153);
-    background: linear-gradient(270deg, rgba(44,81,153,1) 0%, rgba(19,35,86,1) 100%);
+    /* background: rgb(44,81,153);
+    background: linear-gradient(270deg, rgba(44,81,153,1) 0%, rgba(19,35,86,1) 100%); */
     border-radius: 50%;
     text-align: center;
     justify-content: center;
