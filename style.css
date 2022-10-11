@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     margin: 0 auto;
     overflow-x: hidden;
@@ -319,7 +322,7 @@ div.trend{
 
 /* Testimonies */
 .test{
-    padding: 50px 0px 50px 0px;
+    /* padding: 0px 0px 0px 0px; */
     background: url(images/test-bg.png);
 }
 
@@ -642,6 +645,70 @@ div.trend{
 
 
 /* Testimonies end */
+
+
+
+/* FAQ'S */
+
+.faqs{
+  text-align: center;
+  /* background: #F7F7F7; */
+  margin-top: -100px;
+}
+
+
+.accordion {
+  background: #F7F7F7;
+  color: #35475C;
+  /* font-family: 'Open Sans'; */
+  cursor: pointer;
+  padding-left: 18px;
+  padding-top: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  border-top: 1px solid #A1A9B2;
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  color: #35475C;
+  float: right;
+  margin-top: -5px;
+  font-size: 25px;
+}
+
+.accordion:hover::after{
+  color: #5D98AA;
+}
+
+.faq-active:after {
+ content: "\2212";   /* Unicode character for "minus" sign (-) */
+ font-size: 25px;
+ color: #35475C;
+}
+
+.panel {
+  padding: 0 18px;
+  text-align: left;
+  background: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* font-family: 'Open Sans'; */
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #35475C;
+  opacity: 0.7;
+}
+
+/* FAQ'S end */
 
 
 

@@ -464,6 +464,58 @@
       <!-- Testimonies end -->
 
 
+      <!-- FAQ's -->
+
+  <div class="faqs">
+    <div class="container reveal" style="padding-bottom: 12vh;">
+      <div class="text-container">
+        <div style="margin-bottom:3vh;">
+          <h1 class="head">F.A.Q.</h1>
+        </div>
+        <p class="sub-head" >Find answers to the most popular questions</p>
+      </div>
+      <div style="margin-top: 3rem;" class="reveal">
+        <button class="accordion">Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+        <button class="accordion">Question is here Question is here Question is here Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+        <button class="accordion">Question is here Question is here Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        <button class="accordion">Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+        <button class="accordion">Question is here Question is here Question is here Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+        <button class="accordion">Question is here Question is here Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac urna turpis viverra sed mi sociis. Vitae, volutpat, hendrerit pretium, amet aenean dui libero nisl. Vitae lectus rutrum scelerisque sit feugiat accumsan. Id praesent enim in cursus. Et tortor, fringilla ullamcorper auctor habitasse. Nisi, massa nisi ante nulla morbi volutpat libero nunc gravida. Vitae sed iaculis id amet. Nibh id non porta et faucibus mollis non, ante enim. Pharetra mattis hac malesuada volutpat tempor vitae. Id non viverra nisl tristique ornare mi etiam eget.</p>
+          </div>
+
+        <button class="accordion">Question is here Question is here Question is here Question is here Question is here?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+      </div>  
+    </div>
+  </div>
+
+
+  <!-- FAQ'S end -->
+
+
 
 
 
@@ -479,7 +531,9 @@
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 
     <script>
-     $(document).ready(
+
+// Testimonies
+  $(document).ready(
   (function () {
     $(".client-single").on("click", function (event) {
       event.preventDefault();
@@ -512,6 +566,26 @@
     });
   })(jQuery)
 );
+
+
+  //faq's
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("faq-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+
+
 
 
 
