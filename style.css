@@ -320,6 +320,7 @@ div.trend{
 /* Testimonies */
 .test{
     padding: 50px 0px 50px 0px;
+    background: url(images/test-bg.png);
 }
 
 /* @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"); */
@@ -330,7 +331,7 @@ div.trend{
 .testi-wrap {
   position: relative;
   height: 725px;
-  margin-top: -80px;
+  margin-top: -20px;
 }
 .client-single {
   margin-top: 20px;
