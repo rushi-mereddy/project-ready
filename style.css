@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 
@@ -139,7 +140,7 @@ p{
 
 
 .sourcing-card{
-    min-height: 200px;
+    min-height: 210px;
     min-width: 200px;
     margin-top: 40px;
     border-radius: 25px;
@@ -208,6 +209,7 @@ p{
 /* Supported by */
 .supp{
     padding: 50px 0px 50px 0px;
+    overflow: hidden;
 }
 
 .supp-right{
@@ -324,7 +326,7 @@ div.trend{
     padding: 50px 0px 50px 0px;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"); */
 #testimonial-area .section-heading h2 {
   font-size: 48px;
   line-height: 58px;
