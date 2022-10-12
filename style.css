@@ -771,6 +771,10 @@ div.trend{
     margin: auto;
   }
 
+  .neat_logo{
+    width: 70px;
+  }
+
   .rec-head{
     font-size: 20px;
   } 
@@ -786,6 +790,8 @@ div.trend{
 
   .rec-right{
     padding: 0px 0px 0px 0px;
+    text-align: center;
+    justify-content: center;
   }
 
   .supp-head{
