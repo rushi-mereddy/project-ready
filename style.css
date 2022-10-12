@@ -726,8 +726,62 @@ div.trend{
 /* FAQ'S end */
 
 
+@media only screen and (min-width: 630px) and (max-width: 890px){
+  
+  .banner{
+    background-size: cover;
+    /* background-position: ; */
+    height: 50vh;
+  }
+  .main-head{
+    font-size: 32px;
+  }
 
-@media screen and (max-width:420px) {
+  .main-sub-head{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+ 
+  .supp-right{
+    padding: 150px 0px 250px 0px;
+  }
+
+  .supp-head{
+    font-size: 23px;
+  }
+
+  .supp-logo{
+    width: 50px;
+  }
+
+  .supp-left, .rec-right{
+    padding: 50px 0px 50px 0px;
+  }
+
+  .rec-head{
+    font-size: 23px;
+  }
+
+  .rec-left{
+    padding: 80px 80px 150px 0px;
+  }
+
+  .collab-btn{
+    font-size: 15px;
+  }
+
+
+
+
+  .test{
+    background-position: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 250px) and (max-width:520px) {
   .no-mobile{
     display: none;
   }
@@ -759,7 +813,12 @@ div.trend{
 
   .banner{
     background-size: cover;
-    background-position: center;;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .hiw-card{
+    max-width: 300px;
   }
 
   .supp-left{
@@ -789,7 +848,7 @@ div.trend{
   }
 
   .rec-right{
-    padding: 0px 0px 0px 0px;
+    padding: 50px 0px 50px 20px;
     text-align: center;
     justify-content: center;
   }
@@ -802,6 +861,10 @@ div.trend{
 
   .supp-right{
     padding: 150px 0px 150px 0px;
+  }
+
+  .faqs{
+    margin-top: 50px;
   }
 
 }
