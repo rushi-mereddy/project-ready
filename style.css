@@ -33,6 +33,10 @@ p{
     font-size: 16px;
 }
 
+.no-pc{
+  display: none;
+}
+
 /* common end */
 
 /* Banner */
@@ -210,10 +214,6 @@ p{
 .supp{
     padding: 50px 0px 50px 30px;
     overflow: hidden;
-    background: url(images/supp-bg.png);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 .supp-right{
@@ -222,6 +222,10 @@ p{
     padding: 50px 0px 50px 0px;
     text-align: center;
     justify-content: center;
+    background: url(images/supp-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .supp-left{
@@ -283,15 +287,17 @@ p{
 /* Recognized by  */
 .rec{
   padding: 50px 0px 50px 0px;
-  background: url(images/rec-bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 
 .rec-left{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 100px 50px 0px;
     text-align: center;
     justify-content: center;
+    background: url(images/rec-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -718,6 +724,41 @@ div.trend{
 }
 
 /* FAQ'S end */
+
+
+
+@media screen and (max-width:420px) {
+  .no-mobile{
+    display: none;
+  }
+
+  .no-pc{
+    display: inline-block;
+  }
+
+  .head{
+    font-size: 25px;
+  }
+
+  .sub-head{
+    font-size: 19px;
+  }
+
+  .main-head{
+    font-size: 28px;
+  }
+
+  .main-sub-head{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .banner{
+    background-size: cover;
+    background-position: center;;
+  }
+
+}
 
 
 
