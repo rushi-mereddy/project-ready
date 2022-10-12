@@ -732,6 +732,10 @@ div.trend{
     display: none;
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   .no-pc{
     display: inline-block;
   }
@@ -756,6 +760,42 @@ div.trend{
   .banner{
     background-size: cover;
     background-position: center;;
+  }
+
+  .supp-left{
+    padding: 50px 0px 50px 0px;
+  }
+
+  .supp-logo{
+    width: 50px;
+    margin: auto;
+  }
+
+  .rec-head{
+    font-size: 20px;
+  } 
+
+  .collab-btn{
+    font-size: 15px;
+  }
+  
+  .rec-left{
+    margin-top: -150px;
+    margin-bottom: -100px;
+  }
+
+  .rec-right{
+    padding: 0px 0px 0px 0px;
+  }
+
+  .supp-head{
+    font-size: 20px;
+    margin-top: 8%;
+    
+  } 
+
+  .supp-right{
+    padding: 150px 0px 150px 0px;
   }
 
 }
