@@ -11,6 +11,100 @@
   <body>
     <div class="main">
 
+
+      <!-- Popup modal -->
+
+      <div class="popup" id="popup">
+        <div class="container">
+          <button type="button" class="close sip_close" data-dismiss="modal" aria-label="Close" onclick="closePopup()">
+            X
+        </button>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="head" style="color: #ffffff; text-align: center; margin-top: 35px;">Lets Collaborate</div>
+                <div class="form">
+                  <form action="post" >
+                    <div>
+                      <label for="name">Name</label>
+                      <br>
+                      <input type="text" class="form-control" required>
+                    </div>
+                    <div>
+                      <label for="email">Email</label>
+                      <br>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    </div>
+                    <div>
+                      <label for="contact-no">Contact number</label>
+                      <br>
+                      <input type="text" class="form-control" required>
+                    </div>
+                    <div>
+                      <label for="organization">Organization</label>
+                      <br>
+                      <input type="text" class="form-control" required>
+                    </div>
+                    <div>
+                      <label for="message">Message</label>
+                      <br>
+                      <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I agree to terms and conditions</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary popup-btn mt-2">Submit Request</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+
+                <div class="popup-right">
+                  <div class="cards popup-cards">
+                    <div class="card popup-card1">
+                        <div class="body-text fw-bold">
+                          One stop sourcing solution
+                        </div>
+                        <div class="body-text">
+                          We help corporate's source, assess and train tech talent in India, ASIAN and Middle East.
+                        </div>
+                    </div>
+                    <div class="card popup-card2 mt-3">
+                        <div class="body-text fw-bold">
+                          Get trained candidates as per your project needs
+                        </div>
+                        <div class="body-text">
+                          We can customize the module basis your requirements.
+                        </div>
+                    </div>
+                    <div class="card popup-card1 mt-3">
+                        <div class="body-text fw-bold">
+                          Certified Talent Pool
+                        </div>
+                        <div class="body-text">
+                          We assure you to provide certified talent.
+                        </div>
+                    </div> 
+                    <div class="card popup-card2 mt-3">
+                        <div class="body-text fw-bold">
+                          Billable from Day-1
+                        </div>
+                        <div class="body-text">
+                          You get candidates that are Certified and Project ready who are capable of performing from Day-1.
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Popup modal end -->
+
+
       <!-- Banner -->
 
       <div class="banner">
@@ -25,7 +119,7 @@
             We make project ready professionals
           </div>
           <div class="banner-btn-div">
-            <button type="button" class="btn banner-btn">Request a demo</button>
+            <button type="button" class="btn banner-btn" onclick="openPopup()">Request a demo</button>
           </div>
         </div>
       </div>
@@ -35,27 +129,30 @@
 
       <div class="sourcing">
         <div class="container">
-          <div class="head text-center mt-4">
-            Is sourcing, training and hiring a certified project ready talent is a hassle?
-          </div>
-          <div class="sub-head text-center">
-            Leave it  to us. We take care of everything for you.
+        <div class="sourcing-cont">
+            <div class="sourcing-head">
+            <div class="head text-center mt-4">
+              Is hiring a Project Ready Talent a hassle?
+            </div>
+            <div class="sub-head text-center">
+              Leave it to us. We help you build your dream team
+            </div>
           </div>
           <div class="cards-div mt-2">
             <div class="row g-3 justify-content-center">
               <div class="col-md-5 col-12">
                  <div class="row">
                   <div class="col">
-                    <div class="card sourcing-card">
+                    <div class="card sourcing-card card-1">
                       <div class="card-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2431/2431632.png" alt="" width="50px" style="margin-top: 10px;">
+                        <img src="images/solution-icon.svg" alt="" width="45px" style="margin-top: 10px;">
                       </div>
                      <div class="card-text">
                        <div class="body-text">
                          <b> One Stop Sourcing Solution</b>
                        </div>
                       <div class="body-text mt-2">
-                        <p> We source, assess and train tech talent in India, ASIAN and Middle East.</p>
+                        <p> We source, assess and train tech talent in India, ASEAN and Middle East.</p>
                        </div>
                      </div>
                     </div>
@@ -66,13 +163,13 @@
               <div class="col-md-5 col-12">
                 <div class="row">
                  <div class="col">
-                   <div class="card sourcing-card">
+                   <div class="card sourcing-card card-2">
                      <div class="card-icon">
-                       <img src="https://static.thenounproject.com/png/3614322-200.png" alt="" width="60px" style="margin-top: 10px;">
+                       <img src="images/trained-candidate.svg" alt="" width="50px" style="margin-top: 15px;">
                      </div>
                     <div class="card-text">
                       <div class="body-text">
-                       <b> Trained candidates as per your project needs</b>
+                       <b> Trained Candidates As Per Your Project Needs</b>
                       </div>
                      <div class="body-text mt-2">
                        <p> We can customize the modules basis your requirements. </p>
@@ -85,9 +182,9 @@
              <div class="col-md-5 col-12">
               <div class="row">
                <div class="col">
-                 <div class="card sourcing-card">
+                 <div class="card sourcing-card card-3">
                    <div class="card-icon">
-                     <img src="https://smartinternz.com/assets/vmware/images/mentor_supported.svg" alt="" width="50px" style="margin-top: 20px;">
+                     <img src="images/certified-icon.svg" alt="" width="35px" style="margin-top: 15px;">
                    </div>
                   <div class="card-text">
                     <div class="body-text"><b> Certified Talent Pool</b></div>
@@ -102,12 +199,12 @@
              <div class="col-md-5 col-12">
               <div class="row">
                <div class="col">
-                 <div class="card sourcing-card">
+                 <div class="card sourcing-card card-4">
                    <div class="card-icon">
-                     <img src="https://smartinternz.com/assets/vmware/images/mentor_supported.svg" alt="" width="50px" style="margin-top: 20px;">
+                     <img src="images/business-working-hours-icon.svg" alt="" width="50px" style="margin-top: 20px;">
                    </div>
                   <div class="card-text">
-                    <div class="body-text"><b>Billable from Day-1</b></div>
+                    <div class="body-text"><b>Billable From Day-1</b></div>
                    <div class="body-text mt-2">
                      <p> Our talent is capable of performing from Day-1</p>
                     </div>
@@ -118,6 +215,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
       </div>
@@ -142,23 +240,38 @@
                   <div class="hiw-cards">
                     <div class="card hiw-card">
                         <div class="hiwc-content">
+                          <div class="card-icon" style="position: absolute; margin-left: -96px; margin-top: -5px; background-color: none; box-shadow: none;">
+                            <img src="images/order.png" alt="" width="50px" style="margin-top: 15px; margin-left: 10px;">
+                          </div>
                           <div class="hiwc-head body-text">Order Book</div>
                           <div class="hiwc-body body-text">Just share your requirements and relax</div>
                         </div>
                     </div>
                     <div class="card hiw-card">
+                      <div class="card-icon" style="position: absolute; margin-left: -96px; margin-top: -5px; background-color: none; box-shadow: none;">
+                        <img src="images/check-list.png" alt="" width="50px" style="margin-top: 20px; margin-left: 10px;">
+                      </div>
                       <div class="hiwc-head body-text">Assessment</div>
                       <div class="hiwc-body body-text">Basic Aptitude, Coding and Communication Skills</div>
                     </div>
                     <div class="card hiw-card">
+                      <div class="card-icon" style="position: absolute; margin-left: -96px; margin-top: -5px; background-color: none; box-shadow: none;">
+                        <img src="images/online-training.png" alt="" width="50px" style="margin-top: 20px;">
+                      </div>
                       <div class="hiwc-head body-text">Training</div>
-                      <div class="hiwc-body body-text">120+Hrs of project based learning</div>
+                      <div class="hiwc-body body-text">120 Hrs of project based <br> learning</div>
                     </div>
                     <div class="card hiw-card">
+                      <div class="card-icon" style="position: absolute; margin-left: -96px; margin-top: -5px; background-color: none; box-shadow: none;">
+                        <img src="images/award.png" alt="" width="50px" style="margin-top:15px;">
+                      </div>
                       <div class="hiwc-head body-text">Certification</div>
                       <div class="hiwc-body body-text">20Hrs of certification exam preparation</div>
                     </div>
                     <div class="card hiw-card">
+                      <div class="card-icon" style="position: absolute; margin-left: -96px; margin-top: -5px; background-color: none; box-shadow: none;">
+                        <img src="images/hand-shake.png" alt="" width="50px" style="margin-top: 20px;">
+                      </div>
                       <div class="hiwc-head body-text">Placement</div>
                       <div class="hiwc-body body-text">Students are trained on soft skills as well</div>
                     </div>
@@ -231,22 +344,22 @@
       <div class="edu">
         <div class="container">
           <div class="head text-center">Are you an educator?</div>
-          <div class="sub-head text-center">We have an Outcome Driven Framework for Career Readiness</div>
+          <div class="sub-head text-center">We have an Outcome Driven Framework for Project Readiness</div>
           <div class="cards-div mt-3">
             <div class="row g-3 justify-content-center">
               <div class="col-md-5 col-12">
                  <div class="row">
                   <div class="col">
-                    <div class="card sourcing-card">
+                    <div class="card educator-card">
                       <div class="card-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2431/2431632.png" alt="" width="50px" style="margin-top: 10px;">
+                        <img src="images/learning-student-svgrepo-com.svg" alt="" width="50px" style="margin-top: 10px;">
                       </div>
                      <div class="card-text">
                        <div class="body-text">
                          <b> Project Based Learning</b>
                        </div>
                       <div class="body-text mt-2">
-                        <p> Mentor supported structured project based learning. </p>
+                        <p> Hands-on experience with project-based learning. </p>
                        </div>
                      </div>
                     </div>
@@ -257,9 +370,9 @@
               <div class="col-md-5 col-12">
                 <div class="row">
                  <div class="col">
-                   <div class="card sourcing-card">
+                   <div class="card educator-card">
                      <div class="card-icon">
-                       <img src="https://static.thenounproject.com/png/3614322-200.png" alt="" width="60px" style="margin-top: 10px;">
+                       <img src="images/micro-skilling.svg" alt="" width="45px" style="margin-top: 15px;">
                      </div>
                     <div class="card-text">
                       <div class="body-text">
@@ -276,14 +389,14 @@
              <div class="col-md-5 col-12">
               <div class="row">
                <div class="col">
-                 <div class="card sourcing-card">
+                 <div class="card educator-card">
                    <div class="card-icon">
-                     <img src="https://smartinternz.com/assets/vmware/images/mentor_supported.svg" alt="" width="50px" style="margin-top: 20px;">
+                     <img src="images/user-check-icon.svg" alt="" width="45px" style="margin-top: 15px;">
                    </div>
                   <div class="card-text">
-                    <div class="body-text"><b> Project Ready Candidates</b></div>
+                    <div class="body-text"><b> Mentoring </b></div>
                    <div class="body-text mt-2">
-                     <p> We make certified project ready talent.</p>
+                     <p> Mentor supported learning path. </p>
                     </div>
                   </div>
                  </div>
@@ -293,14 +406,14 @@
              <div class="col-md-5 col-12">
               <div class="row">
                <div class="col">
-                 <div class="card sourcing-card">
+                 <div class="card educator-card">
                    <div class="card-icon">
-                     <img src="https://smartinternz.com/assets/vmware/images/mentor_supported.svg" alt="" width="50px" style="margin-top: 20px;">
+                     <img src="images/company-enterprise-icon.svg" alt="" width="50px" style="margin-top: 15px;">
                    </div>
                   <div class="card-text">
-                    <div class="body-text"><b>Supported by 12+ Product Companies</b></div>
+                    <div class="body-text"><b>Certification & Interview readiness</b></div>
                    <div class="body-text mt-2">
-                     <p> We drive trainings for leading tech companies.</p>
+                     <p> Our ultimate goal is to place the students.</p>
                     </div>
                   </div>
                  </div>
@@ -329,7 +442,7 @@
           </div>
           <div class="col-md-6 col-12 rec-right">
             <div class="sub-head text-center" >
-              Recognized by
+              Recognised by
             </div>
             <div class="rec-logos">
               <div class="container text-center">
@@ -355,7 +468,7 @@
       <div class="trend">
         <div class="container">
           <div class="head text-center">
-            Trending Tech on SmartStart
+            Trending Tech on Project Ready Program
           </div>
           <div class="sub-head text-center">
             Some text here Some text here Some text here
@@ -394,7 +507,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>ALorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -404,7 +517,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>BLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -414,7 +527,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -424,7 +537,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -434,7 +547,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>ELorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -444,7 +557,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -454,7 +567,7 @@
                   </div>
                   <div class="client-comment">
                     <h3>GLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
+                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
                   </div>
                 </div>
           
@@ -468,7 +581,7 @@
       <!-- Testimonies end -->
 
       <!-- Educator Testimonies -->
-      <div class="test">
+      <div class="Etest">
         <div class="container">
           <div class="head text-center">
            Educator Testimonies
@@ -476,83 +589,38 @@
           <div class="sub-head text-center">
             Some text here Some text here Some text here
           </div>
-          <section id="testimonial-area">
-            <div class="container mt-5">
-              <div class="testi-wrap">
-          
-                <div class="client-single active position-1" data-position="position-1">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>ALorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-2" data-position="position-2">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>BLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-3" data-position="position-3">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-4" data-position="position-4">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-5" data-position="position-5">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>ELorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-6" data-position="position-6">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-7" data-position="position-7">
-                  <div class="client-img">
-                    <img src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299" width="40px" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>GLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><i class="fa fa-quote-left"></i></span>
-                  </div>
-                </div>
-          
-              </div>
+          <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit atque, iure architecto nulla ab dignissimos, aspernatur reiciendis ullam harum assumenda eum esse vitae voluptates magnam, natus veniam optio saepe. </p> <img src="https://square-vn.com/app/dscms/assets/images/person-1.jpg?v=1653932875">
+                            <div id="image-caption">Nick Doe</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia, illum possimus suscipit dolore itaque reprehenderit repellendus minima debitis expedita, modi vero ratione quam qui aperiam. Harum laboriosam doloremque dolorem.</p> <img src="https://square-vn.com/app/dscms/assets/images/person-1.jpg?v=1653932875" class="img-fluid">
+                            <div id="image-caption">Cromption Greves</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae magni id, totam minima sapiente eaque. Libero, ea consequatur numquam fuga, molestiae quos deleniti nobis, eos autem doloremque rerum necessitatibus nesciunt.</p> <img src="https://square-vn.com/app/dscms/assets/images/person-1.jpg?v=1653932875" class="img-fluid">
+                            <div id="image-caption">Harry Mon</div>
+                        </div>
+                    </div>
+                </div>  
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button> 
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </section>
+        </div>
         </div>
       </div>
       <!-- Educator Testimonies end -->
@@ -678,6 +746,22 @@
       } 
     });
   }
+  
+
+  // popup
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup(){
+    popup.classList.remove("open-popup");
+    popup.classList.add("close-popup");
+  }
+
+ 
+
 
 
 

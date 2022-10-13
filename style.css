@@ -7,6 +7,110 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Popup */
+
+.popup{
+  width: 1000px;
+  height: 550px;
+  background: url(images/popup-bg.png);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 2px 0px 15px 10px #0300004b;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 1000;
+}
+
+button.close{
+  height: 30px;
+  width: 30px;
+  /* background-color: #00000044; */
+  border: 0;
+  -webkit-appearance: none;
+  /* color: #ffffff; */
+  font-weight: bold;
+  border-radius: 50%;
+  float: right;
+  margin-top: 10px;
+}
+
+button.close:hover{
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup-card1{
+  background-color: #8b98d7 !important;
+  max-width: 400px;
+  color: #061238 !important;
+}
+
+.popup-card2{
+  background-color: #8ecfcf !important;
+  max-width: 400px;
+  color: #061238 !important;
+}
+
+.popup-right{
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-right: -80px;
+}
+
+
+label{
+  font-weight: 500;
+  color: #f3f3f3;
+  margin-top: 5px;
+}
+
+input{
+  background-color: #d6d6d68c !important;
+  border: none !important;
+  width: 250px !important;
+  margin-top: 5px;
+  color:#ecf0f3 !important;
+  font-weight: 500 !important;
+}
+
+.form-check-input{
+  width: 15px !important;
+  margin-top: 10px;
+}
+
+.popup-btn{
+  background-color: rgb(26, 100, 196);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border: none;
+}
+
+.popup-btn:hover{
+  background-color: rgb(16, 84, 173);
+  color: rgb(219, 218, 218);
+}
+
+.form{
+  justify-content: center;
+  display: flex;
+
+}
+
+/* Popup end*/
+
 
 /* common  */
 
@@ -42,7 +146,7 @@ p{
 /* Banner */
 
 .banner{
-    background: url(images/banner.png);
+    background: url(images/banner2.png);
     height: 100vh;
     background-position: right;
     background-size: contain;
@@ -95,11 +199,25 @@ p{
 
 /* Sourcing */
 .sourcing{
-    padding: 80px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
     background: url(images/sourcing-bg.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.sourcing-cont{
+  background-color: #132356;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.sourcing-head{
+  border: 5px solid #ffaf02c4;
+  border-radius: 25px;
+  padding-bottom: 25px;
+  background-color: #fcfcfc;
+  
 }
 
 
@@ -113,6 +231,10 @@ p{
 
 .body-text > p{
     color: #ffffff;
+}
+
+.sourcing-card > .card-text >.body-text > p{
+  color: #061238;
 }
 
 .card:hover{
@@ -129,16 +251,19 @@ p{
     box-shadow: 2px 2px 15px 5px #4e4e4e38;
     border-radius: 25px;
     margin: auto;
+    justify-content: center;
     margin-bottom: 0px;
     margin-top: -50px;
     width: 80px;
-    height: 80px;
+    height: 80px !important;
     text-align: center;
     background-color: #8b98d7;
 }
 
 .card-icon > img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(134deg) brightness(107%) contrast(101%);
+    justify-content: center;
+    margin: auto;
 }
 
 .card-text{
@@ -146,13 +271,31 @@ p{
     text-align: center;
 }
 
+/* .card-1{
+  background-color: #00ffe7;
+}
+
+.card-2{
+  background-color: #e7ff64;
+}
+
+.card-3{
+  background-color: #2cff3c;
+}
+
+.card-4{
+  background-color: #ffbe2c;
+} */
+
 
 .sourcing-card{
-    height: 180px;
+    height: 200px;
     min-width: 200px;
     margin-top: 40px;
     border-radius: 25px;
     max-width: 290px;
+    background-color: #dfdfdf;
+    color: #061238;
 }
 
 /* Sourcing end */
@@ -257,9 +400,9 @@ p{
 }
 
 .collab-btn{
-    background: rgb(54, 78, 82);
-    background: linear-gradient(216deg, rgb(102, 149, 156) 0%, rgb(10, 30, 87) 100%);
-    color: aliceblue;
+    background: #132356;
+    color: #ffffff ;
+    background: linear-gradient(216deg, rgb(76, 118, 124) 0%, rgb(10, 30, 87) 100%);
     font-weight: 500;
     border-radius: 25px;
     padding: 10px 20px;
@@ -268,8 +411,10 @@ p{
 }
 
 .collab-btn:hover{
-    background: rgb(65,95,99);
-    background: linear-gradient(216deg, rgba(65,95,99,1) 0%, rgba(19,35,80,1) 100%);
+    background: #0e1a41;
+    color: #ffffff ;
+    background: linear-gradient(216deg, rgb(54, 93, 99) 0%, rgb(7, 24, 73) 100%);
+    /* background: linear-gradient(216deg, rgba(65,95,99,1) 0%, rgba(19,35,80,1) 100%); */
     color: #ffffff;
 }
 
@@ -281,23 +426,30 @@ p{
     background: url(images/edu-bg.png);
 }
 
+.educator-card{
+  height: 200px;
+  min-width: 200px;
+  margin-top: 40px;
+  border-radius: 25px;
+  max-width: 290px;
+}
+
 /* Are you an educator end */
 
 
 /* Recognized by  */
 .rec{
   padding: 50px 0px 50px 0px;
-
 }
 
 .rec-left{
-    padding: 50px 100px 50px 0px;
+    padding: 50px 0px 50px 0px;
     text-align: center;
     justify-content: center;
     background: url(images/rec-bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 
 }
 
@@ -335,11 +487,17 @@ div.trend{
 /* Trending Tech end */
 
 
-/* Testimonies */
+/* Student Testimonies */
 .test{
     /* padding: 0px 0px 0px 0px; */
     background: url(images/test-bg.png);
 }
+
+.test-quote{
+  width: 90px;
+  filter: invert(13%) sepia(15%) saturate(6630%) hue-rotate(207deg) brightness(95%) contrast(99%);
+}
+
 
 /* @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"); */
 #testimonial-area .section-heading h2 {
@@ -348,7 +506,7 @@ div.trend{
 }
 .testi-wrap {
   position: relative;
-  height: 725px;
+  height: 600px;
   margin-top: -20px;
 }
 .client-single {
@@ -454,11 +612,11 @@ div.trend{
 .client-comment h3 {
   font-size: 22px;
   line-height: 32px;
-  color: #505b6d;
+  color: #132356;
 }
 .client-comment span i {
   font-size: 60px;
-  color: #0084ff;
+  color: #132356;
   margin: 40px 0 24px;
   display: inline-block;
 }
@@ -468,7 +626,7 @@ div.trend{
   margin-bottom: 4px;
 }
 .client-info p {
-  color: #0084ff;
+  color: #132356;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -659,16 +817,123 @@ div.trend{
 
 
 
-/* Testimonies end */
+/* Student Testimonies end */
 
+/* Educator Testimonies */
+
+#carouselExampleControls {
+  background: linear-gradient(112deg, #bedbee18 50%, #8b98d71e 50%);
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 1.2rem;
+  /* font-style: italic; */
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+@media(max-width:767px) {
+  .carousel-caption {
+      position: initial;
+      z-index: 10;
+      padding: 3rem 2rem;
+      color: rgba(78, 77, 77, 0.856);
+      text-align: center;
+      font-size: 0.7rem;
+      /* font-style: italic; */
+      font-weight: bold;
+      line-height: 1.5rem;
+  }
+}
+
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+@media(max-width:767px) {
+  .carousel-caption img {
+      width: 4rem;
+      border-radius: 4rem;
+      margin-top: 1rem;
+  }
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media(max-width:767px) {
+  #image-caption {
+      font-style: normal;
+      font-size: 0.6rem;
+      margin-top: 0.5rem;
+  }
+}
+
+.carousel-control-next{
+  background-color: #132356a4;
+  border-radius: 10px 0px 0px 10px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.carousel-control-prev{
+  background-color: #132356a4;
+  border-radius: 0px 10px 10px 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+@media(max-width:767px) {
+  i {
+      padding: 0.8rem;
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset;
+}
+
+/* Educator Testimonies end */
 
 
 /* FAQ'S */
 
 .faqs{
   text-align: center;
+  padding: 50px 0px
   /* background: #F7F7F7; */
-  margin-top: -100px;
+  /* margin-top: -100px; */
 }
 
 
