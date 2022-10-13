@@ -1055,6 +1055,12 @@ div.trend{
     overflow-x: hidden;
   }
 
+  .popup{
+    width: 320px;
+    height: 550px;
+    background-position: left;
+  }
+
   .no-pc{
     display: inline-block;
   }
