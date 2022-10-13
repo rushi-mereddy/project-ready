@@ -73,7 +73,7 @@ button.close:hover{
 
 label{
   font-weight: 500;
-  color: #f3f3f3;
+  color: #061238;
   margin-top: 5px;
 }
 
@@ -82,7 +82,7 @@ input{
   border: none !important;
   width: 250px !important;
   margin-top: 5px;
-  color:#ecf0f3 !important;
+  /* color:#ecf0f3 !important; */
   font-weight: 500 !important;
 }
 
@@ -199,7 +199,7 @@ p{
 
 /* Sourcing */
 .sourcing{
-    padding: 0px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
     background: url(images/sourcing-bg.png);
     background-position: right;
     background-size: contain;
@@ -213,12 +213,15 @@ p{
 }
 
 .sourcing-head{
-  border: 5px solid #ffaf02c4;
+  /* border: 5px solid #ffaf02c4; */
   border-radius: 25px;
   padding-bottom: 25px;
-  background-color: #ffffff;
-  
+  /* background-color: #ffffff; */
 }
+
+.sourcing-head > .head, .sourcing-head > .sub-head{
+  color: #ffffff;
+} 
 
 
 .card{
