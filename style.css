@@ -440,6 +440,7 @@ p{
 /* Recognized by  */
 .rec{
   padding: 50px 0px 50px 0px;
+  overflow-x: hidden;
 }
 
 .rec-left{
@@ -1137,6 +1138,11 @@ div.trend{
   .faqs{
     margin-top: 50px;
   }
+
+  .rec-left-contents{
+    width: 300px;
+    height: 350px;
+}
 
 }
 
