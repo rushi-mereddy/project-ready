@@ -1138,6 +1138,13 @@ div.trend{
     font-size: 15px;
   }
 
+  .rec-left{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 
 
 
@@ -1238,6 +1245,10 @@ div.trend{
 
   .faqs{
     margin-top: 50px;
+  }
+
+  .Etest{
+    margin-top: 25px;
   }
 
 }
