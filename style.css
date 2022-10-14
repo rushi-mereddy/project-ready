@@ -1085,8 +1085,16 @@ div.trend{
 /* FAQ'S end */
 
 
-@media only screen and (min-width: 630px) and (max-width: 890px){
+@media only screen and (min-width: 630px) and (max-width: 1000px){
   
+  .no-tab{
+    display: none;
+  }
+  
+  .only-tab{
+    display: inline-block;
+  }
+
   .banner{
     background-size: cover;
     /* background-position: ; */
@@ -1140,7 +1148,7 @@ div.trend{
 
 
 
-@media only screen and (min-width: 250px) and (max-width:520px) {
+@media only screen and (min-width: 250px) and (max-width:630px) {
   .no-mobile{
     display: none;
   }
