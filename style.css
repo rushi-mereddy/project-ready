@@ -265,7 +265,7 @@ input{
 
 .sourcing-cont{
   background: rgb(65,102,172);
-  background: linear-gradient(154deg, rgba(62,80,166,1) 0%, rgba(139,152,215,1) 100%);
+background: linear-gradient(329deg, rgba(65,102,172,1) 0%, rgba(19,35,86,1) 100%);
   padding: 25px;
   padding-bottom: 60px;
   border-radius: 25px;
@@ -278,9 +278,6 @@ input{
   /* background-color: #ffffff; */
 }
 
-.sourcing-icon{
-  background-color: #132356 !important;
-}
 
 .sourcing-head > .head, .sourcing-head > .sub-head{
   color: #ffffff;
