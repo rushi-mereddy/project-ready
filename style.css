@@ -305,6 +305,10 @@ input{
   font-size: 17px;
 }
 
+.educator-card > .card-text >.body-text > b{
+  font-size: 17px;
+}
+
 .card:hover{
     box-shadow: 1px 1px 10px 3px #4e4e4e70;
 }
