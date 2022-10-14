@@ -1,3 +1,7 @@
+*{
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -6,6 +10,89 @@ body{
     overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* common  */
+
+.head{
+  font-size: 30px;
+  color: #132356;
+  font-weight: 700;
+  text-transform: capitalize;
+  max-width: 80%;
+  margin: auto;
+}
+
+.sub-head{
+  font-size: 20px;
+  color: #132356;
+  font-weight: 500;
+}
+
+p{
+  color: #132356;
+}
+
+.body-text{
+  font-size: 16px;
+}
+
+.no-pc{
+display: none;
+}
+
+
+/* text animation */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 0.5s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* common end */
+
 
 /* Popup */
 
@@ -112,36 +199,6 @@ input{
 /* Popup end*/
 
 
-/* common  */
-
-.head{
-    font-size: 30px;
-    color: #132356;
-    font-weight: 700;
-    text-transform: capitalize;
-    max-width: 80%;
-    margin: auto;
-}
-
-.sub-head{
-    font-size: 20px;
-    color: #132356;
-    font-weight: 500;
-}
-
-p{
-    color: #132356;
-}
-
-.body-text{
-    font-size: 16px;
-}
-
-.no-pc{
-  display: none;
-}
-
-/* common end */
 
 /* Banner */
 
@@ -207,7 +264,8 @@ p{
 }
 
 .sourcing-cont{
-  background-color: #132356;
+  background: rgb(65,102,172);
+background: linear-gradient(329deg, rgba(65,102,172,1) 0%, rgba(19,35,86,1) 100%);
   padding: 25px;
   padding-bottom: 60px;
   border-radius: 25px;
@@ -438,6 +496,24 @@ p{
   max-width: 290px;
 }
 
+.educator-card:hover{
+  box-shadow: 2px 2px 15px 5px #4e4e4e4f;
+}
+
+.zoom {
+  transition: transform .1s; /* Animation */
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: scale(1) translateZ(0) translateX(1%) translateY(1%);
+  -webkit-transition: transform 400ms;
+  transition: transform 400ms;
+}
+
+.zoom:hover {
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 /* Are you an educator end */
 
 
