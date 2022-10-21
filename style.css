@@ -422,10 +422,16 @@ input{
 /* Making project ready */
 
 .mpr{
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
 }
 /* Making project ready end */
 
+/* mid title */
+.mt{
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+/* mid title end */
 
 /* Supported by */
 .supp{
