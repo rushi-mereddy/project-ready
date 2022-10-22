@@ -374,7 +374,7 @@ input{
 
 /* How it works */
 .hiw{
-    padding: 80px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
     background: url(images/hiw-bg.png);
     background-repeat: no-repeat;
     /* height: 100vh; */
@@ -418,6 +418,14 @@ input{
 
 /* How it works end */
 
+/* mid title */
+.mt{
+  margin-top: -25px !important;
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+/* mid title end */
+
 
 /* Making project ready */
 
@@ -426,12 +434,6 @@ input{
 }
 /* Making project ready end */
 
-/* mid title */
-.mt{
-  padding: 0px 0px 50px 0px;
-  text-align: center;
-}
-/* mid title end */
 
 /* Supported by */
 .supp{
