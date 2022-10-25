@@ -420,8 +420,7 @@ input{
 
 /* mid title */
 .mt{
-  margin-top: -25px !important;
-  padding: 0px 0px 50px 0px;
+  padding: 50px 0px 120px 0px;
   text-align: center;
 }
 /* mid title end */
