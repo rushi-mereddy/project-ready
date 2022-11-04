@@ -506,6 +506,7 @@ input{
 .edu{
     padding: 50px 0px 50px 0px;
     background: url(images/edu-bg.png);
+    background-repeat: no-repeat;
 }
 
 .educator-card{
@@ -549,9 +550,9 @@ input{
     text-align: center;
     justify-content: center;
     background: url(images/rec-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 
 }
 
