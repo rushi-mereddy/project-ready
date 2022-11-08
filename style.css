@@ -225,7 +225,7 @@ input{
 }
 
 .main-head{
-    font-size: 45px;
+    font-size: 43px;
     font-weight: bold;
     color: #132356;
     margin-top: 80px;
@@ -233,7 +233,7 @@ input{
 }
 
 .main-sub-head{
-    font-size: 30px;
+    font-size: 25px;
     /* font-weight: bold; */
     text-transform: capitalize;
     color: #132356;
