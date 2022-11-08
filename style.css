@@ -672,6 +672,10 @@ input{
   background-color: #132356;
   color: #ffffff ;
 }
+
+.champ-nums{
+  font-size: 70px;
+}
 /* champs end */
 
 /* Trending Tech */
