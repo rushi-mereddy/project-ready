@@ -487,7 +487,7 @@ input{
 /* Making project ready */
 
 .mpr{
-    padding: 0px 0px 0px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 .value, .why-circle{
@@ -579,9 +579,18 @@ input{
 
 /* Supported by end */
 
+/* Certified */
+.cert{
+  padding: 50px 0px 50px 0px;
+  background-color: #132356;
+  
+}
+
+/* Certified end */
+
 /* Are you an educator */
 .edu{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 100px 0px;
     background: url(images/edu-bg.png);
     background-repeat: no-repeat;
 }
@@ -655,6 +664,15 @@ input{
 }
 /* Recognized by end */
 
+
+/* champs */
+
+.champs{
+  padding: 50px 0px 50px 0px;
+  background-color: #132356;
+  color: #ffffff ;
+}
+/* champs end */
 
 /* Trending Tech */
 
@@ -999,7 +1017,11 @@ div.trend{
 
 /* Student Testimonies end */
 
-/* Educator Testimonies */
+/* Company Testimonies */
+
+.Etest{
+  padding: 50px 0px 50px 0px;
+}
 
 #carouselExampleControls {
   background: linear-gradient(112deg, #bedbee18 50%, #8b98d71e 50%);
