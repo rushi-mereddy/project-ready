@@ -225,7 +225,7 @@ input{
 }
 
 .main-head{
-    font-size: 45px;
+    font-size: 43px;
     font-weight: bold;
     color: #132356;
     margin-top: 80px;
@@ -233,7 +233,7 @@ input{
 }
 
 .main-sub-head{
-    font-size: 30px;
+    font-size: 25px;
     /* font-weight: bold; */
     text-transform: capitalize;
     color: #132356;
@@ -271,9 +271,24 @@ input{
 .proj-ready{
   padding: 50px 0px 50px 0px;
   background-color: #132356;
-  
 }
 
+.sec-2-btn{
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #c011ba;
+  border: none;
+}
+
+.sec-2-btn:hover{
+  background-color: #aa05a5;
+  color: #ffffff;
+}
+
+.sec-2-btn:active{
+  background-color: #850380 !important;
+  color: #ffffff !important;
+}
 
 /* Project ready end */
 
@@ -446,6 +461,7 @@ input{
   background-color: #132356;
   color: #ffffff;
   border: none;
+  font-weight: bold;
 }
 
 .talk-btn:hover{
