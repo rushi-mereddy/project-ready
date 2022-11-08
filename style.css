@@ -33,7 +33,7 @@ p{
 }
 
 .body-text{
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .no-pc{
@@ -118,7 +118,7 @@ display: none;
 button.close{
   height: 30px;
   width: 30px;
-  /* background-color: #00000044; */
+  background-color: transparent;
   border: 0;
   -webkit-appearance: none;
   /* color: #ffffff; */
@@ -129,7 +129,7 @@ button.close{
 }
 
 button.close:hover{
-  background-color: rgba(0, 0, 0, 0.356);
+  background-color: rgba(0, 0, 0, 0.178);
 }
 
 .open-popup{
@@ -156,6 +156,7 @@ button.close:hover{
   display: flex;
   margin-top: 50px;
   margin-right: -80px;
+  
 }
 
 
@@ -180,15 +181,19 @@ input{
 }
 
 .popup-btn{
-  background-color: rgb(26, 100, 196);
+  background-color: #132356;
   color: rgb(255, 255, 255);
   font-weight: 500;
   border: none;
 }
 
 .popup-btn:hover{
-  background-color: rgb(16, 84, 173);
+  background-color: #051446;
   color: rgb(255, 255, 255);
+}
+
+.popup-btn:active{
+  background-color: #020c30 !important;
 }
 
 .form{
@@ -204,15 +209,15 @@ input{
 /* Banner */
 
 .banner{
-    background: url(images/banner2.png);
+    /* background: url(images/banner.png);    */
     height: 100vh;
     background-position: right;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .logos{
-    padding-top: 85px;
+    padding-top: 50px;
 }
 
 .smart-logo{
@@ -220,23 +225,23 @@ input{
 }
 
 .main-head{
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     color: #132356;
-    margin-top: 150px;
+    margin-top: 80px;
     text-transform: capitalize;
 }
 
 .main-sub-head{
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 30px;
+    /* font-weight: bold; */
     text-transform: capitalize;
     color: #132356;
 }
 
 
 .banner-btn-div{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .banner-btn{
@@ -246,6 +251,7 @@ input{
     font-weight: 500;
     border-radius: 25px;
     padding: 10px 20px;
+    border: none;
 }
 
 .banner-btn:hover{
@@ -253,10 +259,26 @@ input{
     background: linear-gradient(216deg, rgba(65,95,99,1) 0%, rgba(19,35,80,1) 100%);
     color: #ffffff;
 }
+
+.banner-btn:active{
+  color: #ffffff !important;
+  background: linear-gradient(216deg, rgb(52, 78, 82) 0%, rgb(13, 34, 90) 100%);
+  padding: 9.7px 19.8px;
+}
 /* Banner end */
 
+/* Project ready  */
+.proj-ready{
+  padding: 50px 0px 50px 0px;
+  background-color: #132356;
+  
+}
+
+
+/* Project ready end */
+
 /* Sourcing */
-.sourcing{
+/* .sourcing{
     padding: 50px 0px 50px 0px;
     background: url(images/sourcing-bg.png);
     background-position: right;
@@ -273,16 +295,14 @@ input{
 }
 
 .sourcing-head{
-  /* border: 5px solid #ffaf02c4; */
   border-radius: 25px;
   padding-bottom: 25px;
-  /* background-color: #ffffff; */
 }
 
 
 .sourcing-head > .head, .sourcing-head > .sub-head{
   color: #ffffff;
-} 
+}  */
 
 
 .card{
@@ -314,9 +334,6 @@ input{
     box-shadow: 1px 1px 10px 3px #4e4e4e70;
 }
 
-.card:hover .card-icon{
-    /* box-shadow: 2px 2px 15px 5px #4e4e4e5b; */
-}
 
 .card-icon{
     text-align: center;
@@ -376,7 +393,7 @@ input{
 /* How it works */
 .hiw{
     padding: 50px 0px 50px 0px;
-    background: url(images/hiw-bg.png);
+    /* background: url(images/hiw-bg.png); */
     background-repeat: no-repeat;
     /* height: 100vh; */
 }
@@ -390,17 +407,29 @@ input{
     margin-bottom: 50px;
 } */
 
+
 .hiw-card{
-    width: 355px;
-    margin: 20px auto;
+    width: 15px;
+    height: 150px;
+    margin: auto;
+    /* margin: 20px auto; */
     border-radius: 25px;
-    border-left: 85px solid #8b98d7;
-    background: linear-gradient(329deg, rgba(65,102,172,1) 0%, rgba(19,35,86,1) 100%);
+    box-shadow: 0.5px 3.5px 3.5px 2.5px #1323561f;
+    /* border-left: 85px solid #8b98d7; */
+    /* background: linear-gradient(329deg, rgba(65,102,172,1) 0%, rgba(19,35,86,1) 100%); */
+    top: 0;
+    transition: top ease 0.5s;
+
 
 }
 
+.arrow{
+  width: 5px;
+  margin: auto;
+}
+
 .hiw-card:hover{
-    transform:rotate(1deg);
+    top: -10px;
 }
 
 .hiwc-head{
@@ -410,19 +439,31 @@ input{
 
 
 .hiw-img{
-    margin: auto;
-    margin-top: 100px;
-    margin-left: 55px;
-    width: 450px;
+  height: 90px;
 }
 
+.talk-btn{
+  background-color: #132356;
+  color: #ffffff;
+  border: none;
+}
+
+.talk-btn:hover{
+  background-color: #001049;
+  color: #ffffff;
+}
+
+.talk-btn:active{
+  background-color: #132356 !important;
+}
 
 /* How it works end */
 
 /* mid title */
 .mt{
-  padding: 50px 0px 120px 0px;
+  padding: 50px 0px 50px 0px;
   text-align: center;
+  background-color: #132356;
 }
 /* mid title end */
 
@@ -431,6 +472,11 @@ input{
 
 .mpr{
     padding: 0px 0px 0px 0px;
+}
+
+.value, .why-circle{
+  font-size: 35px;
+  font-weight: bold;
 }
 /* Making project ready end */
 
@@ -467,13 +513,28 @@ input{
 }
 
 .supp-cards{
-    background-color: #ffffff;
-    height: 100px;
+    /* background-color: #ffffff; */
+    height: 30px;
     margin: 25px auto;
     justify-content: center;
     border: none;
-    box-shadow: 0.5px 3.5px 3.5px 2.5px #1323561f;
+    /* box-shadow: 0.5px 3.5px 3.5px 2.5px #1323561f; */
+    transition: transform 0.5s;
 }
+
+.supp-cards:hover{
+  transform: scale(1.05);
+}
+
+.rec-cards{
+  background-color: #ffffff;
+  height: 100px;
+  margin: 25px auto;
+  justify-content: center;
+  border: none;
+  box-shadow: 0.5px 3.5px 3.5px 2.5px #1323561f;
+}
+
 
 .supp-head{
     color: #ffffff;
@@ -523,7 +584,7 @@ input{
 }
 
 .zoom {
-  transition: transform .1s; /* Animation */
+  /* Animation */
   -webkit-font-smoothing: subpixel-antialiased;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -1203,7 +1264,14 @@ div.trend{
   .banner{
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .banner-img > img{
+    max-width: 300px;
+    margin: auto;
+    
   }
 
   .hiw-card{
