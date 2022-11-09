@@ -495,8 +495,22 @@ input{
 }
 
 .value, .why-circle{
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
+}
+
+.value{
+  margin: auto;
+}
+
+.circle{
+  background-color: #132356;
+  height: 180px;
+  color: #ffffff;
+  width: 180px;
+  margin: auto;
+  padding-top: 50px;
+  border-radius: 50%;
 }
 /* Why choose us end */
 
@@ -505,10 +519,11 @@ input{
 .trend{
   padding: 80px 0px 80px 0px;
   background-color: #132356;
+  /* overflow: scroll; */
 }
 
 .trend-card{
-  max-width: 230px;
+  width: 230px;
 }
 
 
@@ -932,6 +947,14 @@ input{
 }
 
 /* FAQ'S end */
+
+
+/* Footer */
+.footer{
+  padding: 80px 0px 80px 0px;
+  background-color: #132356;
+}
+/* Footer end */
 
 
 @media only screen and (min-width: 630px) and (max-width: 1000px){
