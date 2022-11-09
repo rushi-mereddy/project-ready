@@ -269,7 +269,7 @@ input{
 
 /* Project ready  */
 .proj-ready{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
   background-color: #132356;
 }
 
@@ -294,7 +294,7 @@ input{
 
 /* Sourcing */
 /* .sourcing{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
     background: url(images/sourcing-bg.png);
     background-position: right;
     background-size: contain;
@@ -407,7 +407,7 @@ input{
 
 /* How it works */
 .hiw{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
     /* background: url(images/hiw-bg.png); */
     background-repeat: no-repeat;
     /* height: 100vh; */
@@ -477,7 +477,7 @@ input{
 
 /* mid title */
 .mt{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
   text-align: center;
   background-color: #132356;
 }
@@ -487,11 +487,11 @@ input{
 /* Making project ready */
 
 .mpr{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
 }
 
 .value, .why-circle{
-  font-size: 35px;
+  font-size: 70px;
   font-weight: bold;
 }
 /* Making project ready end */
@@ -499,14 +499,14 @@ input{
 
 /* Supported by */
 .supp{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
     overflow: hidden;
 }
 
 .supp-right{
     /* background: rgb(44,81,153);
     background: linear-gradient(75deg, rgba(44,81,153,1) 0%, rgba(19,35,86,1) 100%); */
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
     text-align: center;
     justify-content: center;
     background: url(images/supp-bg.png);
@@ -581,7 +581,7 @@ input{
 
 /* Certified */
 .cert{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
   background-color: #132356;
   
 }
@@ -627,12 +627,12 @@ input{
 
 /* Recognized by  */
 .rec{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
   overflow-x: hidden;
 }
 
 .rec-left{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
     text-align: center;
     justify-content: center;
     background: url(images/rec-bg.png);
@@ -668,7 +668,7 @@ input{
 /* champs */
 
 .champs{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
   background-color: #132356;
   color: #ffffff ;
 }
@@ -676,12 +676,37 @@ input{
 .champ-nums{
   font-size: 70px;
 }
+
+.champ-sub-text{
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.champs-cards-div{
+  display: flex;
+  align-items: center;
+}
+
+.champ-card{
+  max-width: 200px;
+  background-color: #ffffff;
+  color: #132356;
+  text-align: left;
+  margin: auto;
+}
+
+.illu-img{
+  max-width: 100px;
+  max-height: 120px;
+  margin-top: 25px;
+}
 /* champs end */
 
 /* Trending Tech */
 
 div.trend{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
 }
 
 
@@ -1024,7 +1049,7 @@ div.trend{
 /* Company Testimonies */
 
 .Etest{
-  padding: 50px 0px 50px 0px;
+  padding: 80px 0px 80px 0px;
 }
 
 #carouselExampleControls {
@@ -1235,7 +1260,7 @@ div.trend{
   }
 
   .supp-left, .rec-right{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
   }
 
   .rec-head{
@@ -1321,7 +1346,7 @@ div.trend{
   }
 
   .supp-left{
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 80px 0px;
   }
 
   .supp-logo{
