@@ -228,7 +228,7 @@ input{
     font-size: 43px;
     font-weight: bold;
     color: #132356;
-    margin-top: 80px;
+    margin-top: 25vh;
     text-transform: capitalize;
 }
 
@@ -264,6 +264,10 @@ input{
   color: #ffffff !important;
   background: linear-gradient(216deg, rgb(52, 78, 82) 0%, rgb(13, 34, 90) 100%);
   padding: 9.7px 19.8px;
+}
+
+.banner-img{
+  margin-top: 11vh;
 }
 /* Banner end */
 
@@ -322,10 +326,10 @@ input{
 
 .card{
     padding:15px;
-    box-shadow: 2px 2px 15px 5px #4e4e4e38;
+    /* box-shadow: 2px 2px 15px 5px #4e4e4e38; */
     margin: auto;
-    background-color: #132356;
-    color: #ffffff;
+    /* background-color: #132356; */
+    /* color: #ffffff; */
 }
 
 .body-text > p{
@@ -484,7 +488,7 @@ input{
 /* mid title end */
 
 
-/* Making project ready */
+/* Why choose us */
 
 .mpr{
     padding: 80px 0px 80px 0px;
@@ -494,7 +498,22 @@ input{
   font-size: 70px;
   font-weight: bold;
 }
-/* Making project ready end */
+/* Why choose us end */
+
+/* Trending job roles */
+
+.trend{
+  padding: 80px 0px 80px 0px;
+  background-color: #132356;
+}
+
+.trend-card{
+  max-width: 230px;
+}
+
+
+/* Trending job roles end*/
+
 
 
 /* Supported by */
@@ -591,7 +610,7 @@ input{
 /* Are you an educator */
 .edu{
     padding: 50px 0px 100px 0px;
-    background: url(images/edu-bg.png);
+    /* background: url(images/edu-bg.png); */
     background-repeat: no-repeat;
 }
 
@@ -606,6 +625,14 @@ input{
 
 .educator-card:hover{
   box-shadow: 2px 2px 15px 5px #4e4e4e4f;
+}
+
+.edu-icon-div{
+  text-align: center;
+}
+
+.edu-icon{
+  max-width: 100px;
 }
 
 .zoom {
@@ -656,6 +683,11 @@ input{
 
 .rec-right{
     padding: 50px 50px 50px 50px;
+}
+
+.rec-logos{
+  display: flex;
+  align-items: baseline;
 }
 
 .rec-head{
@@ -720,9 +752,7 @@ input{
 
 /* Trending Tech */
 
-div.trend{
-    padding: 80px 0px 80px 0px;
-}
+
 
 
 
