@@ -5,6 +5,8 @@
 html{
   scroll-behavior: smooth;
 }
+
+/* try arial, mont serrit*/
 body{
     margin: 0 auto;
     overflow-x: hidden;
@@ -14,7 +16,7 @@ body{
 /* common  */
 
 .head{
-  font-size: 30px;
+  font-size: 35px;
   color: #132356;
   font-weight: 700;
   text-transform: capitalize;
@@ -211,6 +213,7 @@ input{
 .banner{
     /* background: url(images/banner.png);    */
     height: 100vh;
+    background-color: #fbfbfd;
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,7 +231,7 @@ input{
     font-size: 43px;
     font-weight: bold;
     color: #132356;
-    margin-top: 25vh;
+    margin-top: 120px;
     text-transform: capitalize;
 }
 
@@ -266,9 +269,6 @@ input{
   padding: 9.7px 19.8px;
 }
 
-.banner-img{
-  margin-top: 11vh;
-}
 /* Banner end */
 
 /* Project ready  */
