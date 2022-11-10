@@ -455,12 +455,12 @@ input{
     padding: 80px 0px 80px 0px;
 }
 
-.value, .why-circle{
+.value, .why-circle, .value2{
   font-size: 50px;
   font-weight: bold;
 }
 
-.value{
+.value, .value2{
   margin: auto;
 }
 
