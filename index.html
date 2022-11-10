@@ -6,10 +6,31 @@
     <title>Project Ready</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <script>
+        // text animation
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 5;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
+    </script>
+
     <div class="main">
 
 
@@ -159,118 +180,16 @@
       </div>
       <!-- Project Ready end -->
 
-      <!-- sourcing  -->
-
-      <!-- <div class="sourcing">
-        <div class="container">
-        <div class="sourcing-cont reveal fade-bottom">
-          <div class="sourcing-head">
-            <div class="head text-center mt-4">
-              Is hiring a Project Ready Talent a hassle?
-            </div>
-            <div class="sub-head text-center">
-              Helping build Certified Project Ready Talent Pipeline
-            </div>
-          </div>
-          <div class="cards-div mt-2">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5 col-12">
-                 <div class="row">
-                  <div class="col">
-                    <div class="card sourcing-card zoom card-1 reveal fade-left">
-                      <div class="card-icon sourcing-icon">
-                        <img src="images/solution-icon.svg" alt="" width="40px" style="margin-top: 10px;">
-                      </div>
-                     <div class="card-text">
-                       <div class="body-text">
-                         <b> One Stop Sourcing Solution</b>
-                       </div>
-                      <div class="body-text mt-2">
-                        <p> We source, assess and train tech talent in India, ASEAN and Middle East.</p>
-                       </div>
-                     </div>
-                    </div>
-                  </div>
-                  
-                 </div>
-              </div>
-              <div class="col-md-5 col-12">
-                <div class="row">
-                 <div class="col">
-                   <div class="card sourcing-card zoom card-2 reveal fade-right">
-                     <div class="card-icon sourcing-icon">
-                       <img src="images/trained_candidates.png" alt="" width="40px" style="margin-top: 15px;">
-                     </div>
-                    <div class="card-text">
-                      <div class="body-text">
-                       <b> Trained Candidates As Per Your Project Needs</b>
-                      </div>
-                     <div class="body-text mt-2">
-                       <p> We can customize the modules basis your requirements. </p>
-                      </div>
-                    </div>
-                   </div>
-                 </div>
-                </div>
-             </div>
-             <div class="col-md-5 col-12">
-              <div class="row">
-               <div class="col">
-                 <div class="card sourcing-card zoom card-3 reveal fade-left">
-                   <div class="card-icon sourcing-icon">
-                     <img src="images/certified-icon.svg" alt="" width="35px" style="margin-top: 15px;">
-                   </div>
-                  <div class="card-text">
-                    <div class="body-text"><b> Certified Talent Pool</b></div>
-                   <div class="body-text mt-2">
-                     <p> We assure you to provide certified candidate.</p>
-                    </div>
-                  </div>
-                 </div>
-               </div>
-              </div>
-              </div>
-             <div class="col-md-5 col-12">
-              <div class="row">
-               <div class="col">
-                 <div class="card sourcing-card zoom card-4 reveal fade-right">
-                   <div class="card-icon sourcing-icon">
-                     <img src="images/business-working-hours-icon.svg" alt="" width="55px" style="margin-top: 15px;">
-                   </div>
-                  <div class="card-text">
-                    <div class="body-text"><b>Billable From Day-1</b></div>
-                   <div class="body-text mt-2">
-                     <p> Our talent is capable of performing from Day-1</p>
-                    </div>
-                  </div>
-                 </div>
-               </div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      </div> -->
-
-      <!-- Sourcing end -->
-
-
+    
       <!-- How it works -->
           <div class="hiw">
             <div class="container">
               <div class="head reveal fade-bottom text-center hiw-head">
                 How it works?
               </div>
-              <!-- <div class="sub-head text-center hiw-sub-head">
-                Some text here Some text here Some text here
-              </div> -->
+             
               <div class="">
-                <!-- <div class="col-md-6 col-12">
-                  <img src="images/floater-prefooter-cta.png" alt="" class="hiw-img no-mobile">
-                </div> -->
-                <!-- <div class="col-md-12 col-12"> -->
+               
                   <div class=" row hiw-cards text-center">
                     <div class="col hiw-card reveal fade-bottom text-center">
                         
@@ -356,7 +275,7 @@
 
 
 
-      <!-- Making project ready -->
+      <!--  Why choose us -->
 
         <div class="mpr">
           <div class="container">
@@ -367,34 +286,34 @@
               <div class="circles text-center">
                <div class="row" id="counter">
                 <div class="col-md-3 col-12 why-circle mt-5" id="counter">
-                  <div class="circle">
+                  <div class="circle reveal fade-bottom">
                     <span class="value count percent" data-count="600"xx>600</span>K
                   </div>
-                  <div class="why-sub-text body-text fw-bold mt-3">
+                  <div class="why-sub-text body-text fw-bold mt-3 reveal fade-bottom" style="font-size: 23px;">
                     Learners on the platform
                   </div>
                 </div>
                 <div class="col-md-3 col-12 why-circle mt-5">
-                  <div class="circle">
+                  <div class="circle reveal fade-bottom">
                     <span class="value count percent" data-count="100">100</span>K
                   </div>
-                  <div class="why-sub-text body-text fw-bold mt-3">
+                  <div class="why-sub-text body-text fw-bold mt-3 reveal fade-bottom" style="font-size: 23px;">
                     Students Upskilled
                   </div>
                 </div>
                 <div class="col-md-3 col-12 why-circle mt-5">
-                  <div class="circle">
+                  <div class="circle reveal fade-bottom">
                     <span class="value count percent" data-count="1000">1000</span>+
                   </div>
-                  <div class="why-sub-text body-text fw-bold mt-3">
+                  <div class="why-sub-text body-text fw-bold mt-3 reveal fade-bottom" style="font-size: 23px;">
                     Colleges Reach
                   </div>
                 </div>
                 <div class="col-md-3 col-12 why-circle mt-5">
-                  <div class="circle">
+                  <div class="circle reveal fade-bottom">
                     <span class="value count percent" data-count="12">12</span>+
                   </div>
-                  <div class="why-sub-text body-text fw-bold mt-3">
+                  <div class="why-sub-text body-text fw-bold mt-3 reveal fade-bottom" style="font-size: 23px;">
                     Job Roles Supported
                   </div>
                 </div>
@@ -404,22 +323,22 @@
           </div>
         </div>
 
-      <!-- Making project ready end -->
+      <!--  Why choose us end -->
 
       <!-- Trending job roles -->
 
       <div class="trend">
         <div class="container">
-          <div class="head text-center" style="color: #ffffff;">
+          <div class="head text-center reveal fade-bottom" style="color: #ffffff;">
             Trending job roles
           </div>
-          <div class="sub-head text-center" style="color: #ffffff;">
+          <div class="sub-head text-center reveal fade-bottom" style="color: #ffffff;">
             The trainings are supported by 12+ product companies like Salesforce, IBM, Google etc.
           </div>
 
           <div class="trend-cards mt-5">
             <div class="row cards">
-             <div class="col-md-3 col-12">
+             <div class="col-md-3 col-12 reveal fade-bottom">
               <div class="trend-card card">
                 <h4 class="trend-card-title">Salesforce Developer</h4>
                 <div class="body-text">
@@ -431,7 +350,7 @@
                 </div>
               </div>
              </div>
-             <div class="col-md-3 col-12">
+             <div class="col-md-3 col-12 reveal fade-bottom">
               <div class="trend-card card">
                 <h4 class="trend-card-title">Salesforce Administrator</h4>
                 <div class="body-text">
@@ -443,7 +362,7 @@
                 </div>
               </div>
              </div>
-             <div class="col-md-3 col-12">
+             <div class="col-md-3 col-12 reveal fade-bottom">
               <div class="trend-card card">
                 <h4 class="trend-card-title">Salesforce Developer</h4>
                 <div class="body-text">
@@ -455,7 +374,7 @@
                 </div>
               </div>
              </div>
-             <div class="col-md-3 col-12">
+             <div class="col-md-3 col-12 reveal fade-bottom">
               <div class="trend-card card">
                 <h4 class="trend-card-title">Salesforce Developer</h4>
                 <div class="body-text">
@@ -502,14 +421,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-12 supp-right">
-              <div class="container">
-                <div class="head supp-head">
-                  Want to know more?
-                </div>
-              <button type="button" class="btn collab-btn">Lets Collaborate</button>
-            </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -518,7 +429,7 @@
       <!-- Certified -->
       <div class="cert">
         <div class="container">
-          <div class="main-head text-center" style="color: #ffffff; margin-top: unset;">
+          <div class="main-head text-center reveal fade-bottom" style="color: #ffffff; margin-top: unset;">
             A Certified and Project Ready Candidate have higher chances of getting the placement.
           </div>
         </div>
@@ -531,43 +442,51 @@
       <!-- Are you an educator -->
       <div class="edu">
         <div class="container">
-          <div class="head text-center">Are you an educator?</div>
-          <div class="sub-head text-center">We have an Outcome Driven Framework for Project Readiness</div>
+          <div class="head text-center reveal fade-bottom">Are you an educator?</div>
+          <div class="sub-head text-center reveal fade-bottom">We have an Outcome Driven Framework for Project Readiness</div>
           <div class="cards-div mt-3">
             <div class="edu-cards mt-5">
               <div class="row">
                 <div class="col-md-3">
-                  <div class="edu-icon-div">
+                  <div class="edu-icon-div reveal fade-bottom">
                     <img src="images/idea.png" alt="" class="edu-icon">
                   </div>
-                  <div class="edu-sub-text body-text fw-bold text-center mt-4" style="font-size: 23;">
+                  <div class="edu-sub-text body-text fw-bold text-center mt-4 reveal fade-bottom" style="font-size: 23px;">
                     Project Based Learning
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="edu-icon-div">
+                  <div class="edu-icon-div reveal fade-bottom">
                     <img src="images/skills.png" alt="" class="edu-icon">
                   </div>
-                  <div class="edu-sub-text body-text fw-bold text-center mt-4" style="font-size: 23;">
+                  <div class="edu-sub-text body-text fw-bold text-center mt-4 reveal fade-bottom" style="font-size: 23px;">
                     Micro Skilling
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="edu-icon-div">
+                  <div class="edu-icon-div reveal fade-bottom">
                     <img src="images/online-meeting.png" alt="" class="edu-icon">
                   </div>
-                  <div class="edu-sub-text body-text fw-bold text-center mt-4" style="font-size: 23;">
+                  <div class="edu-sub-text body-text fw-bold text-center mt-4 reveal fade-bottom" style="font-size: 23px;">
                     Mentoring
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="edu-icon-div">
+                  <div class="edu-icon-div reveal fade-bottom">
                     <img src="images/handshake.png" alt="" class="edu-icon">
                   </div>
-                  <div class="edu-sub-text body-text fw-bold text-center mt-4" style="font-size: 23;">
+                  <div class="edu-sub-text body-text fw-bold text-center mt-4 reveal fade-bottom" style="font-size: 23px;">
                     Certification & Interview Readiness
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-text text-center">
+            <div class="container">
+              <div class="body-text text-center">
+                We have a structured training program which makes the learning easy. Hands-on project development along with the 
+                mentor support helps the candidate become project ready and increases the chances of getting hired. 
               </div>
             </div>
           </div>
@@ -581,16 +500,9 @@
       <!-- Recognized by -->
       <!-- <div class="rec"> -->
         <div class="row">
-          <!-- <div class="col-md-6 col-12 rec-left">
-            <div class="rec-left-contents">
-              <div class="head rec-head">
-                Speak to us
-              </div>
-              <button type="button" class="btn collab-btn" onclick="openPopup()">Request a demo</button>
-            </div>
-          </div> -->
+ 
           <div class="col-md-12 col-12 mt-5">
-            <div class="sub-head text-center" >
+            <div class="sub-head text-center reveal fade-bottom" >
               Recognised by
             </div>
             <div class="rec-logos">
@@ -617,17 +529,17 @@
       <!-- Champs  -->
       <div class="champs">
         <div class="container text-center">
-          <div class="head" style="color: #ffffff ">
+          <div class="head reveal fade-bottom" style="color: #ffffff ">
             SmartInternz Champs are the best
           </div>
-          <div class="body-text mt-3">
+          <div class="body-text reveal fade-bottom mt-3">
             We give a SmartInternz Champ badge to only those candidates who score 8 and above in the our overall program 
             evaluation and are certified as per the company standards.
             SmartInternz Champs are the assets you wouldn’t want to miss.
           </div>
 
           <div class="row">
-            <div class="col-md-4 champ-nums-div">
+            <div class="col-md-4 champ-nums-div reveal fade-left">
               <div class="mt-5">
                 <div class="champ-nums mt-4">
                   <span class="value champ-nums count percent" data-count="10">10</span>%
@@ -653,7 +565,7 @@
               <div class="cards">
                 <div class="row g-5">
                   <div class="col-md-4 pt-5">
-                    <div class="card champ-card shadow rounded">
+                    <div class="card champ-card shadow rounded reveal fade-right">
                       <h4 class="text-center">Salesforce Developer</h4>
                       <div class="card-tags">
                         <div class="tag" style="background: #23ad00;">
@@ -672,7 +584,7 @@
                     </div>
                   </div>
                   <div class="col-md-4 pt-5">
-                    <div class="champ-card card shadow rounded" style="margin-top: 200px;">
+                    <div class="champ-card card shadow rounded reveal fade-right" style="margin-top: 200px;">
                       <h4 class="text-center">Salesforce Developer</h4>
                       <div class="card-tags">
                         <div class="tag mt-5"  style="background: #1376af;">
@@ -688,7 +600,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="champ-card card shadow rounded">
+                    <div class="champ-card card shadow rounded reveal fade-right">
                       <h4 class="text-center">Salesforce Developer</h4>
                       <div class="card-tags pt-4">
                         <div class="tag mt-5"  style="background: #c500ab;">
@@ -718,122 +630,7 @@
 
       <!-- Champs end -->
 
-      <!-- /* Trending Tech */ -->
-      <!-- <div class="trend">
-        <div class="container">
-          <div class="head text-center">
-            Trending Tech on Project Ready Program
-          </div>
-          <div class="sub-head text-center">
-            Some text here Some text here Some text here
-          </div>
-          <div class="trend-logos mt-5">
-            <div class="row justify-content-center text-center ">
-              <div class="col-3"><img src="logos/Administrator.png" alt="" width="250px"></div>
-              <div class="col-md-3 col-12"><img src="logos/developer.png" alt="" width="150px"></div>
-              <div class="col-md-3 col-12 pt-5 mt-2"><img src="logos/google.png" alt="" width="150px"></div>
-              <div class="col-md-3 col-12 mt-3"><img src="logos/ibm.png" alt="" width="120px"></div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
-      <!-- /* Trending Tech end */ -->
-
-
-      <!-- Student Testimonies -->
-      <!-- <div class="test">
-        <div class="container">
-          <div class="head text-center">
-            Student Testimonies
-          </div>
-          <div class="sub-head text-center">
-            Some text here Some text here Some text here
-          </div>
-          <section id="testimonial-area">
-            <div class="container mt-5">
-              <div class="testi-wrap">
-          
-                <div class="client-single active position-1" data-position="position-1">
-                  <div class="client-img zoom reveal fade-bottom">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>ALorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-2" data-position="position-2">
-                  <div class="client-img zoom reveal fade-right">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>BLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-3" data-position="position-3">
-                  <div class="client-img zoom reveal fade-right">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-4" data-position="position-4">
-                  <div class="client-img zoom reveal fade-right">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-5" data-position="position-5">
-                  <div class="client-img zoom reveal fade-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>ELorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-6" data-position="position-6">
-                  <div class="client-img zoom reveal fade-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-                <div class="client-single inactive position-7" data-position="position-7">
-                  <div class="client-img zoom reveal fade-left">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8hzuL_hN510I7b7wE-pHROEdymlRHvXquA&usqp=CAU" width="40px" alt="">
-                  </div>
-                  <div class="client-comment">
-                    <h3>GLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-                    <span><img src="images/quote-left-solid.svg" alt="" class="test-quote"></span>
-                  </div>
-                </div>
-          
-              </div>
-            </div>
-          </section>
-        </div>
-      </div> -->
-
-
-      <!-- Testimonies end -->
-
+     
       <!-- Student banner -->
 
       <div class="stu-banner-sec">
@@ -849,13 +646,13 @@
       <!-- Customer Stories -->
       <div class="Etest">
         <div class="container">
-          <div class="head text-center" style="color: #ffffff;">
+          <div class="head text-center reveal fade-bottom" style="color: #ffffff;">
             Customer stories
           </div>
-          <div class="sub-head text-center" style="color: #ffffff;">
+          <div class="sub-head text-center reveal fade-bottom" style="color: #ffffff;">
             Some text here Some text here Some text here
           </div>
-          <div class="container">
+          <div class="container reveal fade-bottom">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -914,9 +711,9 @@
     <div class="container" style="padding-bottom: 12vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 class="head">F.A.Q.</h1>
+          <h1 class="head reveal fade-bottom">F.A.Q.</h1>
         </div>
-        <p class="sub-head" >Find answers to the most popular questions</p>
+        <p class="sub-head reveal fade-bottom" >Find answers to the most popular questions</p>
       </div>
       <div style="margin-top: 3rem;" class="reveal">
         <button class="accordion reveal fade-bottom">Question is here Question is here Question is here?</button>
@@ -959,18 +756,16 @@
 
   <!-- FAQ'S end -->
 
-  <div class="footer">
+
+
+  <!-- Footer -->
+  <!-- <div class="footer">
     <div class="container">
       <div class="body-text text-center" style="color: #ffffff;">
         Footer 
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-
-  </div>
+  </div> -->
   <!-- Footer end -->
 
 

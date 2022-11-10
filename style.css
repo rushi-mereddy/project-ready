@@ -280,49 +280,21 @@ input{
 .sec-2-btn{
   color: #ffffff;
   font-weight: bold;
-  background-color: #c011ba;
+  background-color: #119bc0;
   border: none;
 }
 
 .sec-2-btn:hover{
-  background-color: #aa05a5;
+  background-color: #0790b6;
   color: #ffffff;
 }
 
 .sec-2-btn:active{
-  background-color: #850380 !important;
+  background-color: #017ea0 !important;
   color: #ffffff !important;
 }
 
 /* Project ready end */
-
-/* Sourcing */
-/* .sourcing{
-    padding: 80px 0px 80px 0px;
-    background: url(images/sourcing-bg.png);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.sourcing-cont{
-  background: rgb(65,102,172);
-  background: linear-gradient(329deg, rgba(65,102,172,1) 0%, rgba(19,35,86,1) 100%);
-  padding: 25px;
-  padding-bottom: 60px;
-  border-radius: 25px;
-}
-
-.sourcing-head{
-  border-radius: 25px;
-  padding-bottom: 25px;
-}
-
-
-.sourcing-head > .head, .sourcing-head > .sub-head{
-  color: #ffffff;
-}  */
-
 
 .card{
     padding:15px;
@@ -380,23 +352,6 @@ input{
     text-align: center;
 }
 
-/* .card-1{
-  background-color: #00ffe7;
-}
-
-.card-2{
-  background-color: #e7ff64;
-}
-
-.card-3{
-  background-color: #2cff3c;
-}
-
-.card-4{
-  background-color: #ffbe2c;
-} */
-
-
 .sourcing-card{
     height: 200px;
     min-width: 200px;
@@ -450,6 +405,7 @@ input{
 .arrow{
   width: 5px;
   margin: auto;
+  filter: invert(9%) sepia(56%) saturate(3008%) hue-rotate(218deg) brightness(96%) contrast(96%);
 }
 
 .hiw-card:hover{
@@ -741,6 +697,7 @@ input{
 
 .champs{
   padding: 80px 0px 80px 0px;
+  width: 100vw;
   background-color: #132356;
   color: #ffffff ;
 }
