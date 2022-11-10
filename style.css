@@ -524,6 +524,7 @@ input{
 
 .trend-card{
   width: 230px;
+  border-radius: 45px !important;
 }
 
 
@@ -741,6 +742,7 @@ input{
   color: #132356;
   text-align: left;
   margin: auto;
+  border-radius: 45px !important;
 }
 
 .card-tags{
