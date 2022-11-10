@@ -523,8 +523,27 @@ input{
 }
 
 .trend-card{
-  width: 230px;
+  width: 200px;
   border-radius: 45px !important;
+}
+
+.trend-card-title{
+  color: #051f74;
+}
+
+.dummy1{
+  width: 100px;
+  height: 10px;
+  background-color: rgba(255, 192, 203, 0.562);
+  border-radius: 20px;
+}
+
+.dummy2{
+  width: 100px;
+  height: 10px;
+  background-color: rgba(192, 201, 255, 0.562);
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 
@@ -738,7 +757,7 @@ input{
 
 .champ-card{
   max-width: 200px;
-  background-color: #e9e9e9;
+  background-color: #ffffff;
   color: #132356;
   text-align: left;
   margin: auto;
@@ -763,19 +782,29 @@ input{
 .illu-img{
   max-width: 100px;
   max-height: 120px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 /* champs end */
 
+/* Student banner  */
 
-/* Company Testimonies */
+.stu-banner{
+  width: 1200px;
+  margin: auto;
+}
+
+/* Student banner end */
+
+
+/* Customer Stories */
 
 .Etest{
   padding: 80px 0px 80px 0px;
+  background-color: #132356;
 }
 
 #carouselExampleControls {
-  background: linear-gradient(112deg, #bedbee18 50%, #8b98d71e 50%);
+  /* background: linear-gradient(112deg, #c7d2da18 100%, #ebecf51e 100%); */
   max-width: 900px;
   margin: auto;
   margin-top: 30px;
@@ -785,12 +814,16 @@ input{
   position: initial;
   z-index: 10;
   padding: 5rem 8rem;
-  color: rgba(78, 77, 77, 0.856);
+  color: #ffffff;
   text-align: center;
   font-size: 1.2rem;
   /* font-style: italic; */
   font-weight: bold;
   line-height: 2rem;
+}
+
+.carousel-caption > p{
+  color: #ffffff;
 }
 
 @media(max-width:767px) {
