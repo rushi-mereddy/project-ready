@@ -150,13 +150,13 @@ button.close:hover {
 
 
 .popup-card1 {
-  background-color: #8b98d7 !important;
+  background-color: #b2bfff  !important;
   max-width: 400px;
   color: #061238 !important;
 }
 
 .popup-card2 {
-  background-color: #8ecfcf !important;
+  background-color: #b2bfff  !important;
   max-width: 400px;
   color: #061238 !important;
 }
@@ -190,6 +190,13 @@ input {
   margin-top: 10px;
 }
 
+
+.form-check-input:checked {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+
+
 .popup-btn {
   background-color: #132356;
   color: rgb(255, 255, 255);
@@ -214,7 +221,26 @@ input {
 
 /* Popup end*/
 
+/* Navbar start */
+.displayNav{
+display: block !important;
+}
 
+.hideNav{
+  display: none;
+  
+}
+
+.navbar, .navbar-light, .bg-light{
+  position: fixed;
+  width: 100%;
+  /* opacity: 100% !important; */
+  background-color: #f7f7f7 !important;
+  z-index: 999999;
+}
+
+
+/* Navbar end */
 
 /* Banner */
 
@@ -834,15 +860,19 @@ input {
   margin-top: 30px;
 }
 
+.cust-story > p{
+  color: #ffffff;
+}
+
 .carousel-caption {
   position: initial;
   z-index: 10;
-  padding: 5rem 8rem;
+  /* padding: 5rem 8rem; */
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   /* font-style: italic; */
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 2rem;
 }
 
@@ -865,18 +895,19 @@ input {
 }
 
 .carousel-caption img {
-  width: 7rem;
+  /* width: 7rem; */
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 15px;
-  margin-top: 2rem;
+  /* margin-top: 3rem; */
+  
 }
 
 @media(max-width:767px) {
   .carousel-caption img {
-    width: 4rem;
-    border-radius: 4rem;
-    margin-top: 1rem;
+    width: 8rem;
+    /* border-radius: 4rem; */
+    /* margin-top: 1rem; */
   }
 }
 
@@ -891,6 +922,7 @@ input {
     font-style: normal;
     font-size: 0.6rem;
     margin-top: 0.5rem;
+    color: #ffffff;
   }
 }
 

@@ -127,12 +127,24 @@
       <!-- Popup modal end -->
 
 
+      <!-- NavBar start -->
+      <nav class="navbar navbar-light bg-light hideNav">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="logos/Smart.png" alt="smart internz logo" width="120px" class="d-inline-block align-text-top" style="margin-left: 25px;">
+          </a>
+          <button class="btn btn-success" type="button" onclick="openPopup()">Get a demo</button>
+         
+        </div>
+      </nav>
+      <!-- NavBar end -->
+
       <!-- Banner -->
 
       <div class="banner">
         <div class="container">
           <div class="logos">
-            <img src="logos/Smart.png" alt="" class="smart-logo">
+            <img src="logos/Smart.png" alt="" class="smart-logo no-mobile">
           </div>
           <div class="row">
             <div class="col-sm-12 col-lg-7 col-md-6">
@@ -147,7 +159,7 @@
                 A hassle free solution for sourcing a Deployable Talent
               </div>
               <div class="banner-btn-div animate__animated animate__fadeInUp">
-                <button type="button" class="btn banner-btn" onclick="openPopup()">Request a demo</button>
+                <button type="button" class="btn banner-btn" onclick="openPopup()">Get a Demo</button>
               </div>  
             </div>
             <div class="col-sm-12 col-lg-5 col-md-6">
@@ -161,7 +173,7 @@
       <!-- Banner end -->
 
       <!-- Project Ready -->
-      <div class="proj-ready">
+      <div class="proj-ready" id="section2">
         <div class="container">
           <div class="main-head text-center reveal fade-bottom" style="color: #ffffff; margin-top: unset;">
             Zero Time to Hire, Day One Billable
@@ -172,7 +184,7 @@
             projects and are capable of performing from Day One.
           </div>
           <div class="sec-2-btn-div text-center reveal fade-bottom">
-            <div class="btn sec-2-btn primary-btn mt-3">
+            <div class="btn sec-2-btn primary-btn mt-3" onclick="openPopup()">
               Get a Demo
             </div>
           </div>
@@ -489,7 +501,7 @@
                 mentor support helps the candidate become project ready and increases the chances of getting hired. 
               </div>
               <div class="edu-btn-div">
-                <div class="btn btn-primary edu-btn reveal fade-bottom mt-4">
+                <div class="btn btn-primary edu-btn reveal fade-bottom mt-4" onclick="openPopup()">
                   Get A Demo
                 </div>
               </div>
@@ -626,7 +638,7 @@
 
 
           <div class="sec-2-btn-div text-center reveal fade-bottom">
-            <div class="btn sec-2-btn primary-btn mt-3">
+            <div class="btn sec-2-btn primary-btn mt-3" onclick="openPopup()">
               Get a Demo
             </div>
           </div>
@@ -655,41 +667,36 @@
             Customer stories
           </div>
           <div class="sub-head text-center reveal fade-bottom" style="color: #ffffff;">
-            Some text here Some text here Some text here
+            This is what our customers say
           </div>
           <div class="container reveal fade-bottom">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-caption">
-                          <img src="logos/stack_nexus_logo.png"> 
+                          <div class="row">
+                            <div class="col-md-4 col-12 text-center" style="align-items: center; display: flex;">
+                          <img src="logos/stack_nexus_logo.png" class="mx-auto"> 
+
+                            </div>
+                            <div class="col-md-8 col-12 cust-story">
                             <p class="mt-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit atque, iure architecto nulla ab dignissimos, aspernatur reiciendis ullam harum assumenda eum esse vitae voluptates magnam, natus veniam optio saepe. </p>
-                            <!-- <div id="image-caption">Nick Doe</div> -->
+                            <div id="image-caption fw-bold" style="font-weight: bold !important; float: right;"> - Stack Nexus</div>
+
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption">
-                          <img src="logos/stack_nexus_logo.png" class="img-fluid"> 
-                            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia, illum possimus suscipit dolore itaque reprehenderit repellendus minima debitis expedita, modi vero ratione quam qui aperiam. Harum laboriosam doloremque dolorem.</p>
-                            <!-- <div id="image-caption">Cromption Greves</div> -->
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption">
-                          <img src="logos/stack_nexus_logo.png" class="img-fluid"> 
-                            <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae magni id, totam minima sapiente eaque. Libero, ea consequatur numquam fuga, molestiae quos deleniti nobis, eos autem doloremque rerum necessitatibus nesciunt.</p>
-                            <!-- <div id="image-caption">Harry Mon</div> -->
-                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button> 
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> -->
                     </div>
                 </div>  
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button> 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+               
             </div>
         </div>
         </div>
@@ -945,6 +952,35 @@ $(window).scroll(function() {
   }
 
 });
+
+
+// Navbar
+
+$(document).ready(function() {
+
+// .scroll() creates an event when the user scrolls
+$(window).scroll(function() {
+
+  // .scrollTop() retrieves vertical position of the scroll bar for the first element in a set of matched elements
+  var scroll = $(window).scrollTop();
+
+  var objectSelect = $('#section2');
+
+  // .offset() retrieves current position of element relative to document
+  var objectPosition = objectSelect.offset().top;
+
+  if (scroll > objectPosition) {
+
+    $('nav').removeClass('hideNav');
+    $('nav').addClass('displayNav');
+  } else {
+    $('nav').removeClass('displayNav');
+    $('nav').addClass('hideNav');
+  }
+});
+});
+
+
 
  
     </script>
