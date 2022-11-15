@@ -303,6 +303,12 @@ display: block !important;
   padding: 9.7px 19.8px;
 }
 
+.banner-img>img {
+  max-width: 400px;
+  margin: auto;
+
+}
+
 /* Banner end */
 
 /* Project ready  */
