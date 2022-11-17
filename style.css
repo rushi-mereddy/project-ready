@@ -793,7 +793,7 @@ display: block !important;
   color: #ffffff;
 }
 
-.champ-card > h4{
+.champ-card > h5{
   font-weight: 700;
 
 }
@@ -817,7 +817,7 @@ display: block !important;
 }
 
 .champ-card {
-  max-width: 200px;
+  max-width: 150px;
   z-index: 1;
   color: #ffffff;
   text-align: left;
@@ -830,8 +830,8 @@ display: block !important;
 
 .card-tags {
   position: absolute;
-  margin-top: 60px;
-  margin-left: 120px;
+  margin-top: 40px;
+  margin-left: 100px;
   white-space: nowrap;
   color: #ffffff;
   opacity: 1.8 !important;
@@ -845,9 +845,9 @@ display: block !important;
 }
 
 .illu-img {
-  max-width: 100px;
-  max-height: 120px;
-  margin-top: 20px;
+  max-width: 90px;
+  max-height: 100px;
+  margin-top: 10px;
 }
 
 /* champs end */
