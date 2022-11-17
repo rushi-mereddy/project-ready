@@ -535,10 +535,11 @@ display: block !important;
 }
 
 .trend-card {
-  width: 200px;
+  width: 180px;
   border-radius: 45px !important;
   border: 3px solid #20fff4;
   background: #ffffff96;
+  overflow: hidden;
 }
 
 .trend-card-title {
@@ -569,7 +570,7 @@ display: block !important;
   /* max-height: 100px; */
   margin-top: 25px;
   margin-bottom: -15px;
-  margin-right: 15px !important;
+  /* margin-right: 15px !important; */
 }
 
 
@@ -845,7 +846,7 @@ display: block !important;
 
 .card-tags {
   position: absolute;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-left: 100px;
   white-space: nowrap;
   color: #ffffff;
@@ -861,7 +862,8 @@ display: block !important;
   vertical-align: center;
   align-items: center;
   display: flex;
-  padding: 0px 15px;
+  padding: 3px 10px;
+  font-size: 12px;
 }
 
 .illu-img {
@@ -875,7 +877,8 @@ display: block !important;
 /* Student banner  */
 
 .stu-banner {
-  width: 1200px;
+  /* width: 0px; */
+  height: 600px;
   margin: auto;
 }
 
