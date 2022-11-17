@@ -721,7 +721,7 @@ display: block !important;
 }
 
 .zoom:hover .zoom-item {
-  animation: zoom-in-zoom-out 2s ease-out
+  animation: zoom-in-zoom-out 0.8s ease-out
 }
 
 @keyframes zoom-in-zoom-out {
@@ -863,7 +863,7 @@ display: block !important;
   /* background: linear-gradient(112deg, #c7d2da18 100%, #ebecf51e 100%); */
   max-width: 900px;
   margin: auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .cust-story > p{
