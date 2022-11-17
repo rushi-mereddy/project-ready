@@ -431,7 +431,7 @@ display: block !important;
   min-width: 160px;
   height: 150px;
   margin: auto;
-  background: linear-gradient(330deg, rgb(62 99 166 / 78%) 0%, rgb(10 24 105 / 87%) 73%);
+  background: linear-gradient(160deg, rgb(62 99 166 / 78%) 0%, rgb(10 24 105 / 97%) 43%);
   /* margin: 20px auto; */
   border-radius: 25px;
   box-shadow: 0.5px 3.5px 3.5px 2.5px #1323561f;
@@ -502,7 +502,7 @@ display: block !important;
 .why-circle,
 .value2 {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .value,
@@ -793,14 +793,22 @@ display: block !important;
   color: #ffffff;
 }
 
+.champ-card > h4{
+  font-weight: 700;
+
+}
+
 .champ-nums {
-  font-size: 70px;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .champ-sub-text {
   max-width: 300px;
   text-align: center;
   margin: auto;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .champs-cards-div {
@@ -810,12 +818,14 @@ display: block !important;
 
 .champ-card {
   max-width: 200px;
-  background-color: #ffffff;
-  color: #132356;
+  z-index: 1;
+  color: #ffffff;
   text-align: left;
+  background: #ffffff70;
   margin: auto;
-  border: 3px solid #8b8df0;
+  border: 3px solid #8bd8f0;
   border-radius: 45px !important;
+
 }
 
 .card-tags {
