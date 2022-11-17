@@ -236,7 +236,7 @@ display: block !important;
   width: 100%;
   /* opacity: 100% !important; */
   background-color: #f7f7f7 !important;
-  z-index: 999999;
+  z-index: 100;
 }
 
 
