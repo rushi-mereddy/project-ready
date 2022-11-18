@@ -123,6 +123,11 @@ p {
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
   z-index: 1000;
+  
+}
+
+body.popup{
+  overflow: hidden;
 }
 
 button.close {
@@ -1087,7 +1092,7 @@ display: block !important;
 
 /* Footer */
 .footer {
-  padding: 30px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   background-color: #132356;
 }
 

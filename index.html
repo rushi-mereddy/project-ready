@@ -414,7 +414,7 @@
       <div class="supp">
         <div class="">
           <div class="row">
-            <div class="col-md-12 col-12">
+            <div class="col-md-12 col-12" id="scrollpopup">
               <div class="sub-head text-center reveal fade-bottom" >
                 Supported by
               </div>
@@ -837,7 +837,7 @@
               <a href="#">  for educators </a>
             </li>
             <li>
-              <a href="#"> f.a.q. </a>
+              <a href="#"> for students </a>
             </li>
             </ul>
           </div>
@@ -1099,15 +1099,20 @@
 
   // popup
   let popup = document.getElementById("popup");
+  const body = document.querySelector("body");
+
 
   function openPopup(){
     popup.classList.add("open-popup");
+    body.style.overflow = "hidden";
   }
 
   function closePopup(){
     popup.classList.remove("open-popup");
     popup.classList.add("close-popup");
+    body.style.overflow = "auto";
   }
+  
 
 
     // text animation
@@ -1222,6 +1227,8 @@ $(window).scroll(function() {
   }
 });
 });
+
+
 
 
 
